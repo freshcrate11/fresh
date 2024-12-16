@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+nav{
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 25px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background-image: url('https://images.unsplash.com/photo-1695653422259-8a74ffe90401?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdyb2NlcnklMjBkZWxpdmVyeXxlbnwwfHwwfHx8MA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2{
+    font-size: 50px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.hero button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(inset 0, 0, 0, 0.1 );
+}
+
+.hero button:hover {
+    background-color: #e65c50;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between; /* Ensure equal spacing between items */
+    flex-wrap: wrap; /* Allows wrapping if screen width is smaller */
+    gap: 20px; /* Adds space between the cards */
+    margin: 100px 70px;
+    text-align: center;
+}
+
+.content div {
+    background-color: white;
+    padding: 90px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(30% - 20px); /* Adjust for 3 cards with gaps */
+    box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+.content div img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.content div:hover {
+    transform: scale(1.05);
+    transition: transform 0.312s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.content button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #affa98;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(inset 0, 0, 0, 0.1 );
+}
+
+.content button:hover {
+    background-color: #e3e96c;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between; /* Ensure equal spacing between items */
+    flex-wrap: wrap; /* Allows wrapping if screen width is smaller */
+    gap: 20px; /* Adds space between the cards */
+    margin: 100px 70px;
+    text-align: center;
+}
+
+.about div {
+    background-color: white;
+    padding: 150px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.about h2 {
+    font-size: 32px;
+    text-align: center;
+    margin: 40px 0 20px;
+}
+
+.about button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #affa98;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(inset 0, 0, 0, 0.1 );
+}
+
+.about button:hover {
+    background-color: #e3e96c;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}

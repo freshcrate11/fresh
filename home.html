@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <title>FreshCrate</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>FreshCrate</h1>
+            <p>Welcome to FreshCrate, your one-stop shop for all your grocery needs!</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href = "#Grocery">Grocery</a>
+        <a href = "#Fruits">Fruits</a>
+        <a href = "#Vegetables">Vegetables</a>
+        <a href = "#Dairy">Dairy</a>
+        <a href = "#Beverages">Beverages</a>
+    </nav>
+
+    <section class = "hero">
+        <h2>Fresh Produce Delivered to Your Door</h2>
+        <p>Experience the convenience of shopping for fresh groceries from the comfort of your home. Our easy-to-use online platform allows you to browse and purchase a wide range of products with just a few clicks.</p>
+        <button onclick="alert('Redirecting to fresh deals')">Shop Now</button>
+    </section>
+
+    <section class="content">
+        <div class="Grocery">
+            <img src="grocery.jpg" alt="Grocery">
+            <h3 id="Grocery">Grocery</h3>
+            <p>Find the wide range of groceries</p>
+            <button onclick="window.location.href='grocery.html'">Shop Now</button>
+        </div>
+    
+        <div class="Fruits">
+            <img src="fruits.jpg" alt="Fruits">
+            <h3 id="Fruits">Fruits</h3>
+            <p>Fruits available</p>
+            <button onclick="window.location.href='fruits.html'">Shop Now</button>
+        </div>
+    
+        <div class="Vegetables">
+            <img src="vegetables.jpg" alt="Vegetables">
+            <h3 id="Vegetables">Vegetables</h3>
+            <p>Fresh picked Vegetables available at your door step</p>
+            <button onclick="window.location.href='vegetables.html'">Shop Now</button>
+        </div>
+    
+        <div class="Dairy">
+            <img src="dairy.jpg" alt="Dairy">
+            <h3 id="Dairy">Dairy</h3>
+            <p>All Dairy products available</p>
+            <button onclick="window.location.href='dairy.html'">Shop Now</button>
+        </div>
+    
+        <div class="Beverages">
+            <img src="beverages.jpg" alt="Beverages">
+            <h3 id="Beverages">Beverages</h3>
+            <p>All Beverages available</p>
+            <button onclick="window.location.href='beverages.html'">Shop Now</button>
+        </div>
+    </section>
+    
+    <section class = "about">
+        <div>
+            <h2>ABOUT US</h2>
+            <p>We are FreshCrate</p>
+            <p>your one-stop shop for all your grocery needs!</p>
+            <button onclick="window.location.href='about.html'">About Us</button>
+        </div>
+
+        <div>
+            <h2>CONTACT US</h2>
+            <p>To Contact Us</p>
+            <button onclick="redirectToGmail()">Contact Us</button>
+        </div>
+    </section>
+    <script>
+        function redirectToGmail() {
+      const recipientEmail = "charanachanta2@gmail.com"; // Replace with the recipient's email
+      const subject = "Inquiry";                   // Replace with your email subject
+      const body = "Hello, I would like to contact you regarding..."; // Replace with your email body
+
+      // Construct Gmail compose URL
+      const gmailComposeUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(recipientEmail)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+      // Redirect to Gmail compose URL
+      window.open(gmailComposeUrl, '_blank');
+    }
+    </script>
+
+    <footer>
+        <p>© 2024 FreshCrate | <a href="#contact" style="color: white;">Contact Us</a></p>
+	    <p>charanachanta2@gmail.com</p>
+    </footer>
+</body>
+</html>
